@@ -1,15 +1,7 @@
-import { useContext } from 'react';
-import ScreenState from '../contexts/screen-state';
+import HomePage from '../page-assets/HomePage';
 
 const Home = () => {
-    const { isMobile } = useContext(ScreenState);
-    console.log(isMobile);
-
-    return (
-        <div>
-            <h1>HomePage</h1>
-        </div>
-    );
+    return <HomePage />;
 };
 
 export default Home;
