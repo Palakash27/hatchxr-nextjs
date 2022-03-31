@@ -151,14 +151,15 @@ const Hero = () => {
             <div
                 style={{
                     textAlign: 'center',
-                    margin: '61px 0 0'
+                    margin: '61px 0 0',
+                    position: 'relative'
                 }}>
                 <img
                     src={stars.src}
                     alt="stars"
                     style={{
                         position: 'absolute',
-                        top: '81px',
+                        top: '-45px',
                         left: '78px'
                     }}
                 />
@@ -167,7 +168,7 @@ const Hero = () => {
                     alt="planet1"
                     style={{
                         position: 'absolute',
-                        top: '52px',
+                        top: '-74px',
                         left: '78px'
                     }}
                 />
@@ -176,8 +177,8 @@ const Hero = () => {
                     alt="planet2"
                     style={{
                         position: 'absolute',
-                        top: '25px',
-                        right: '93px'
+                        top: '-101px',
+                        left: '1075px'
                     }}
                 />
                 <p
