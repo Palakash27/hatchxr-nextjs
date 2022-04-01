@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import hatchXRKidsLogo from '../../../../public/images/hatch-kids-logo.svg';
 import mountainsImage from '../../../../public/images/mountains.webp';
 import notification from '../../../../public/images/notification.svg';
@@ -24,7 +26,7 @@ const Hero = () => {
                         display: 'flex',
                         flex: '1'
                     }}>
-                    <img src={hatchXRKidsLogo.src} width="82px" height="48px" alt="logo" />
+                    <Image src={hatchXRKidsLogo} width="82px" height="48px" alt="logo" />
                     <ul
                         style={{
                             display: 'flex',
@@ -111,7 +113,7 @@ const Hero = () => {
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
-                        <img src={notification.src} alt="notification" width="14" height="17" />
+                        <Image src={notification} alt="notification" width="14" height="17" />
                     </div>
                     <div
                         style={{
@@ -128,7 +130,7 @@ const Hero = () => {
                                 justifyContent: 'center',
                                 overflow: 'hidden'
                             }}>
-                            <img src={avatar.src} alt="avatar" width="44" height="44" />
+                            <Image src={avatar} alt="avatar" width="44" height="44" />
                         </div>
                         <div
                             style={{
@@ -138,8 +140,8 @@ const Hero = () => {
                                 height: '44px',
                                 padding: '11px 18px 17px 12px'
                             }}>
-                            <img
-                                src={headerDropDown.src}
+                            <Image
+                                src={headerDropDown}
                                 alt="header-drop-down"
                                 width="12"
                                 height="7"
@@ -154,33 +156,36 @@ const Hero = () => {
                     margin: '61px 0 0',
                     position: 'relative'
                 }}>
-                <img
-                    src={stars.src}
-                    alt="stars"
+                <div
                     style={{
                         position: 'absolute',
-                        top: '-45px',
-                        left: '78px'
-                    }}
-                />
-                <img
-                    src={planet1.src}
-                    alt="planet1"
+                        top: '-44px',
+                        left: '80px',
+                        width: '1266px',
+                        height: '159px'
+                    }}>
+                    <Image src={stars} alt="stars" layout="fill" />
+                </div>
+                <div
                     style={{
                         position: 'absolute',
                         top: '-74px',
-                        left: '78px'
-                    }}
-                />
-                <img
-                    src={planet2.src}
-                    alt="planet2"
+                        left: '78px',
+                        width: '306px',
+                        height: '306px'
+                    }}>
+                    <Image src={planet1} alt="planet1" layout="fill" />
+                </div>
+                <div
                     style={{
                         position: 'absolute',
                         top: '-101px',
-                        left: '1075px'
-                    }}
-                />
+                        left: '1075px',
+                        width: '272px',
+                        height: '268px'
+                    }}>
+                    <Image src={planet2} alt="planet2" layout="fill" />
+                </div>
                 <p
                     style={{
                         fontSize: '40px',
@@ -199,15 +204,12 @@ const Hero = () => {
                     Follow our step by step guides and build cool 3D games that you can share and
                     play with your friends.
                 </p>
-                <img
-                    src={mountainsImage.src}
+                <div
                     style={{
                         marginBottom: '-5px'
-                    }}
-                    alt="mountains"
-                    width="1440"
-                    height="72"
-                />
+                    }}>
+                    <Image src={mountainsImage} alt="mountains" width="1440" height="72" />
+                </div>
             </div>
         </div>
     );
