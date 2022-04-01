@@ -862,6 +862,8 @@ const HomePage = () => {
                                 style={{
                                     marginRight: '15px'
                                 }}
+                                width="30"
+                                height="30"
                             />
                             <img
                                 src={insta.src}
@@ -869,6 +871,8 @@ const HomePage = () => {
                                 style={{
                                     marginRight: '15px'
                                 }}
+                                width="30"
+                                height="30"
                             />
                             <img
                                 src={twitter.src}
@@ -876,6 +880,8 @@ const HomePage = () => {
                                 style={{
                                     marginRight: '15px'
                                 }}
+                                width="30"
+                                height="30"
                             />
                             <img
                                 src={youtube.src}
@@ -883,6 +889,8 @@ const HomePage = () => {
                                 style={{
                                     marginRight: '15px'
                                 }}
+                                width="30"
+                                height="30"
                             />
                         </div>
                     </div>
