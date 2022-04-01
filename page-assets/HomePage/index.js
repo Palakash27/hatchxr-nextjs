@@ -9,19 +9,21 @@ import youtube from '../../public/images/youtube.svg';
 import Image from 'next/image';
 import Cards from './sections/Cards';
 
-const HomePage = () => {
+import styles from './HomePage.module.css';
+
+const HomePage = ({ isMobile }) => {
     return (
         <div
             style={{
                 margin: '0 auto',
                 maxWidth: '1440px'
             }}>
-            <Hero />
+            <Hero isMobile={isMobile} />
             <div
                 style={{
                     backgroundColor: '#e5ecff',
                     paddingBottom: '262px',
-                    width: '1440px'
+                    maxWidth: '1440px'
                 }}>
                 <Cards />
                 <div
@@ -31,18 +33,7 @@ const HomePage = () => {
                         justifyContent: 'center',
                         alignItems: 'center'
                     }}>
-                    <div
-                        style={{
-                            fontSize: '20px',
-                            fontWeight: '600',
-                            lineHeight: '1.5',
-                            textAlign: 'center',
-                            color: '#342d4e',
-                            alignSelf: 'center',
-                            width: '660px',
-                            height: '70px',
-                            marginBottom: '40px'
-                        }}>
+                    <div className={styles.freeCurriculumText} style={{}}>
                         <p
                             style={{
                                 marginBottom: '20px'
@@ -57,30 +48,14 @@ const HomePage = () => {
                         </p>
                     </div>
 
-                    <div>
+                    <div className={styles.freeCurriculumBtnWrapper}>
                         <input
                             type="text"
-                            style={{
-                                width: '380px',
-                                height: '60px',
-                                border: 'solid 1px rgba(34, 56, 255, 0.1)',
-                                backgroundColor: '#f6f8ff',
-                                paddingLeft: '34px',
-                                fontSize: '16px',
-                                borderRadius: '12px 0 0 12px'
-                            }}
+                            className={styles.freeCurriculumInput}
+                            style={{}}
                             placeholder="Enter your email address"
                         />
-                        <button
-                            style={{
-                                width: '301px',
-                                height: '60px',
-                                backgroundColor: '#19ae79',
-                                color: '#FFF',
-                                fontSize: '16px',
-                                fontWeight: '600',
-                                borderRadius: '0 12px 12px 0'
-                            }}>
+                        <button className={styles.freeCurriculumButton} style={{}}>
                             Request Free Curriculum
                         </button>
                     </div>
@@ -89,14 +64,10 @@ const HomePage = () => {
             <div
                 style={{
                     backgroundColor: '#030735',
-                    width: '1440px'
+                    maxWidth: '1440px'
                 }}>
                 <Image src={iceberg} alt="iceberg" width="1440" height="286" />
-                <div
-                    style={{
-                        display: 'flex',
-                        margin: '-45px 152px 80px'
-                    }}>
+                <div className={styles.footerNavLinks}>
                     <div
                         style={{
                             display: 'flex',
@@ -276,64 +247,16 @@ const HomePage = () => {
                             </ul>
                         </div>
                     </div>
-                    <div
-                        style={{
-                            display: 'flex',
-                            flexDirection: 'column'
-                        }}>
-                        <button
-                            style={{
-                                width: '240px',
-                                height: '60px',
-                                borderRadius: '8px',
-                                backgroundColor: '#2238ff',
-                                color: '#FFF',
-                                fontSize: '16px',
-                                fontWeight: '600',
-                                marginBottom: '13px'
-                            }}>
-                            Code With Blocks
-                        </button>
-                        <button
-                            style={{
-                                width: '240px',
-                                height: '60px',
-                                borderRadius: '8px',
-                                borderStyle: 'solid',
-                                borderWidth: '1px',
-                                borderImageSource:
-                                    'linear-gradient(58deg, #2238ff 26%, #ff4b4b 153%)',
-                                borderImageSlice: '1',
-                                background: '#030735',
-                                color: '#FFF',
-                                fontSize: '16px',
-                                fontWeight: '600'
-                            }}>
-                            Code With JavaScript
-                        </button>
+                    <div className={styles.footerBtns}>
+                        <button className={styles.primaryButton}>Code With Blocks</button>
+                        <button className={styles.secondaryButton}>Code With JavaScript</button>
                     </div>
                 </div>
-                <div
-                    style={{
-                        display: 'flex',
-                        margin: '0 152px',
-                        paddingBottom: '48px',
-                        alignItems: 'center'
-                    }}>
-                    <p
-                        style={{
-                            flex: '1',
-                            fontSize: '15px',
-                            fontWeight: '600',
-                            color: '#FFF'
-                        }}>
+                <div className={styles.footerCopyright} style={{}}>
+                    <p className={styles.copyrightText} style={{}}>
                         Copyright 2021. All Rights Reserved. K12 Innovations Pvt. Ltd.
                     </p>
-                    <div
-                        style={{
-                            display: 'flex',
-                            alignItems: 'center'
-                        }}>
+                    <div className={styles.footerSocial} style={{}}>
                         <div
                             style={{
                                 display: 'flex',
@@ -358,10 +281,7 @@ const HomePage = () => {
                                 Privacy Policy
                             </p>
                         </div>
-                        <div
-                            style={{
-                                display: 'flex'
-                            }}>
+                        <div className={styles.socialIcons} style={{}}>
                             <div
                                 style={{
                                     marginRight: '15px'

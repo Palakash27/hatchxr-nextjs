@@ -1,0 +1,120 @@
+.navList {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.navListItem {
+    padding: 11px 24px;
+    line-height: 1.8;
+    margin-right: 4px;
+}
+
+.navListItemActive {
+    background-color: rgba(147, 155, 238, 0.2);
+    border-radius: 12px;
+}
+
+.newProjectButtonText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.planet1 {
+    position: absolute;
+    top: -74px;
+    left: 5%;
+    width: 306px;
+    height: 306px;
+}
+
+.planet2 {
+    position: absolute;
+    top: -101px;
+    left: 75%;
+    width: 272px;
+    height: 268px;
+}
+
+.heroHeading {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.heroSubHeading {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width: 1200px) {
+    .navList {
+        font-size: 12px;
+    }
+
+    .navListItem {
+        padding: 11px 12px;
+    }
+
+    .newProjectButtonText {
+        font-size: 12px;
+    }
+
+    .planet1 {
+        left: 0px;
+    }
+
+    .heroHeading {
+        font-size: 30px;
+    }
+
+    .heroSubHeading {
+        font-size: 12px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .planet1 {
+        left: -5%;
+    }
+
+    .heroHeading {
+        font-size: 30px;
+    }
+
+    .heroSubHeading {
+        font-size: 12px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header > ul {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .planet1 {
+        display: none;
+    }
+
+    .planet2 {
+        display: none;
+    }
+}
