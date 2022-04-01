@@ -582,6 +582,9 @@ const HomePage = () => {
                     style={{
                         marginTop: '-1px'
                     }}
+                    alt="iceberg"
+                    width="1440"
+                    height="286"
                 />
                 <div
                     style={{
