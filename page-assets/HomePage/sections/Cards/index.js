@@ -21,6 +21,7 @@ export default function Cards() {
                     heading={card.heading}
                     subHeading={card.subHeading}
                     image={card.image}
+                    videoUrl={card.videoUrl}
                 />
             ))}
         </div>
