@@ -19,11 +19,7 @@ const Hero = ({ isMobile }) => {
                 maxWidth: '1440px',
                 backgroundImage: 'linear-gradient(to bottom, #030735 0%, #1d2259 100%)'
             }}>
-            <div
-                style={{
-                    display: 'flex',
-                    padding: '17px 32px 0px 48px'
-                }}>
+            <div className={styles.headerWrapper} style={{}}>
                 <div className={styles.header} style={{}}>
                     <Image src={hatchXRKidsLogo} width="82px" height="48px" alt="logo" />
 

@@ -52,6 +52,11 @@
     margin-bottom: 25px;
 }
 
+.headerWrapper {
+    display: flex;
+    padding: 17px 32px 0px 48px;
+}
+
 .header {
     display: flex;
     flex: 1;
@@ -116,5 +121,9 @@
 
     .planet2 {
         display: none;
+    }
+
+    .headerWrapper {
+        padding: 17px 10px 0px;
     }
 }

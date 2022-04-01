@@ -15,8 +15,9 @@ const HomePage = ({ isMobile }) => {
     return (
         <div
             style={{
-                margin: '0 auto',
-                maxWidth: '1440px'
+                width: '100%',
+                height: 'auto',
+                overflowX: 'hidden'
             }}>
             <Hero isMobile={isMobile} />
             <div
