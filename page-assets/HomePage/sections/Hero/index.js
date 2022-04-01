@@ -1,11 +1,11 @@
-import hatchXRKidsLogo from '../../public/images/hatch-kids-logo.svg';
-import mountainsImage from '../../public/images/mountains.webp';
-import notification from '../../public/images/notification.svg';
-import headerDropDown from '../../public/images/header-drop-down.svg';
-import avatar from '../../public/images/avatar.jpg';
-import stars from '../../public/images/stars.svg';
-import planet1 from '../../public/images/planet1.webp';
-import planet2 from '../../public/images/planet2.webp';
+import hatchXRKidsLogo from '../../../../public/images/hatch-kids-logo.svg';
+import mountainsImage from '../../../../public/images/mountains.webp';
+import notification from '../../../../public/images/notification.svg';
+import headerDropDown from '../../../../public/images/header-drop-down.svg';
+import avatar from '../../../../public/images/avatar.jpg';
+import stars from '../../../../public/images/stars.svg';
+import planet1 from '../../../../public/images/planet1.webp';
+import planet2 from '../../../../public/images/planet2.webp';
 
 const Hero = () => {
     return (
@@ -204,6 +204,9 @@ const Hero = () => {
                     style={{
                         marginBottom: '-5px'
                     }}
+                    alt="mountains"
+                    width="1440"
+                    height="72"
                 />
             </div>
         </div>

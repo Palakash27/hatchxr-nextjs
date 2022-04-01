@@ -1,4 +1,4 @@
-import Hero from '../Hero';
+import Hero from './sections/Hero';
 
 import iceberg from '../../public/images/iceberg.webp';
 import fb from '../../public/images/facebook.svg';
