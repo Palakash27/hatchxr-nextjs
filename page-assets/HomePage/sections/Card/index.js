@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import videoPlay from '../../../../public/images/video-play.svg';
 import IframeOverLay from '../../../../common-assets/components/iframe-overlay';
-import { CardWrapper } from './styles.js';
+import styles from './Card.module.css';
 
 export default function Card({ image, pillStatus, heading, subHeading, videoUrl }) {
     const [openVideo, setOpenVideo] = useState(false);
@@ -16,7 +16,8 @@ export default function Card({ image, pillStatus, heading, subHeading, videoUrl 
                     onClose={() => setOpenVideo(false)}
                 />
             )}
-            <CardWrapper
+            <div
+                className={styles.cardWrapper}
                 onClick={() => {
                     setOpenVideo(true);
                 }}>
@@ -66,7 +67,7 @@ export default function Card({ image, pillStatus, heading, subHeading, videoUrl 
                     }}>
                     {subHeading}
                 </p>
-            </CardWrapper>
+            </div>
         </>
     );
 }

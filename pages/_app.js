@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 import ScreenState from '../contexts/screen-state';
 import { getScreenWidth } from '../helpers/common-helpers';
-import '../common-assets/styles/main.scss';
+import '../common-assets/styles/main.css';
 
 function HatchXR({ Component, pageProps }) {
     const [screenState, setScreenState] = useState({
